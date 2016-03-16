@@ -183,4 +183,11 @@ public class BluetoothMapContentObserver {
 		SendMessage();
 	}
 
+	public void init() {
+	}
+	public void deinit() {
+	}
+
+
+
 }
