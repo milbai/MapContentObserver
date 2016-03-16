@@ -12,12 +12,8 @@ import android.os.Looper;
 import android.os.Message;
 import android.os.ParcelUuid;
 import android.util.Log;
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import javax.obex.ApplicationParameter;
 import javax.obex.ClientOperation;
 import javax.obex.ClientSession;
 import javax.obex.HeaderSet;
@@ -44,10 +40,14 @@ public class BluetoothMnsObexClient {
 	BluetoothDevice mRemoteDevice;
 	private BluetoothMapContentObserver mObserver;
 	private boolean mObserverRegistered = false;
+
 	// Used by the MAS to forward notification registrations
 	public static final int MSG_MNS_NOTIFICATION_REGISTRATION = 1;
+
+
 	public static final ParcelUuid BluetoothUuid_ObexMns =
 			ParcelUuid.fromString("00001133-0000-1000-8000-00805F9B34FB");
+
 	public BluetoothMnsObexClient(Context context, BluetoothDevice remoteDevice) {
 		if (remoteDevice == null) {
 			throw new NullPointerException("Obex transport is null");
