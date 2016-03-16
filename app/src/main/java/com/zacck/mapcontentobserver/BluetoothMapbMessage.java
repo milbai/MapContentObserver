@@ -419,7 +419,7 @@ public abstract class BluetoothMapbMessage {
 							break;
 						case MMS:
 						case EMAIL:
-							newBMsg = new BluetoothMapbMessageMmsEmail();
+							//TODO define email type
 							break;
 						default:
 							break;
