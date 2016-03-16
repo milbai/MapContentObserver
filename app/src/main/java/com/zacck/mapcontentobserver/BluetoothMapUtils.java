@@ -8,7 +8,7 @@ package com.zacck.mapcontentobserver;
  */
 public class BluetoothMapUtils {
 	private static final String TAG = "MapUtils";
-	private static final boolean V = BluetoothMapService.VERBOSE;
+	private static final boolean V = true;
 	/* We use the upper 5 bits for the type mask - avoid using the top bit, since it
 	 * indicates a negative value, hence corrupting the formatter when converting to
 	 * type String. (I really miss the unsigned type in Java:))
