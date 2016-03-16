@@ -26,7 +26,7 @@ import android.util.Xml;
 import com.zacck.mapcontentobserver.BluetoothMapUtils.TYPE;
 
 public class BluetoothMapContentObserver {
-	private static final String TAG = "BluetoothMapContentObserver";
+	private static final String TAG = "MapDContenObs";
 	private static final boolean D = false;
 	private static final boolean V = false;
 	private Context mContext;
